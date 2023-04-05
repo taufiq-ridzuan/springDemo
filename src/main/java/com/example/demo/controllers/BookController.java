@@ -18,7 +18,7 @@ public class BookController {
     public String getBooks(Model model) {
 
         model.addAttribute("books", bookService.findAll());
-
+        System.out.println("in getBooks()");
         return "books";
     }
 }
